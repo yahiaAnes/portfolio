@@ -1,12 +1,20 @@
 'use client';
-import React,{ useEffect } from 'react'
+import React,{ useEffect, useRef } from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi';
+import {motion} from 'framer-motion'
+import { useInView } from 'framer-motion';
 
 function About() {
-
+    
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
   return (
-    <div  className='w-full md:px-20 px-10 flex items-center h-screen y-20'>
-        <div>
+    <div ref={ref}  style={{
+        transform: isInView ? "none" : "translateX(-200px)",
+        opacity: isInView ? 1 : 0,
+        transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}} className='w-full md:px-20 px-10 flex items-center h-screen y-20'>
+        
+               <div>
             <p className='text-[#00F7FF] '>About me</p>
             <h1 className='text-6xl sm-text-7xl font-bold text-white'><span>who</span><strong className='text-[#00F7FF] '> am </strong><span>I ?</span></h1>
             <p className='text-[#8892b0] py-4 max-w-[600px]'>Seeking expert solutions? Unleash our team of professionals across
@@ -22,6 +30,7 @@ function About() {
             </button>
             
         </div>
+        
     </div>
         
   )

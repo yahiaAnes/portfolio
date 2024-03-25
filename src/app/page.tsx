@@ -8,13 +8,12 @@ import Works from "./components/Works";
 import Mail from "./components/Mail";
 import { motion , useScroll} from "framer-motion";
 import Footer from "./components/Footer";
-import { useRef } from "react";
-
-
+import { useRef , useEffect } from "react";
+import "animate.css/animate.min.css";
  function Home() {
   const{scrollYProgress} = useScroll();
 
-
+ 
   return (
     <>
     <motion.div
