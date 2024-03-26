@@ -43,7 +43,7 @@ function Navbar() {
         <li className='py-6 text-4xl'>Work</li>
         <li className='py-6 text-4xl'>Contact</li>
 
-        <button className=' px-3 py-6 text-4xl bg-[#00F7FF] text-black rounded-[15px]'>Get started</button>
+        <button className=' px-3 py-6 text-2xl font-bold bg-[#00F7FF] text-black rounded-[15px]'>Get started</button>
 
       </ul>
       {/* social media */}

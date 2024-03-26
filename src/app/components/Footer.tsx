@@ -9,8 +9,7 @@ function Footer(){
                 <h2 className="text-3xl font-extrabold text-white sm:text-5xl">Take your project to another level</h2>
         
                 <p className="mx-auto mt-4 max-w-sm text-white">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum maiores ipsum eos temporibus
-                ea nihil.
+                Ready to get started? Let's chat about your project! I'm happy to answer any questions you might have and discuss how I can help you achieve your online goals.
                 </p>
         
                 <a
