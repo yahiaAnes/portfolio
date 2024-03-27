@@ -1,15 +1,15 @@
 'use client'
 
-import Navbar from "./components/Navbar";
-import Main from "./components/Main";
-import About from "./components/About";
-import Skils from "./components/Skils";
-import Works from "./components/Works";
-import Mail from "./components/Mail";
-import { motion , useScroll} from "framer-motion";
-import Footer from "./components/Footer";
-import { useRef , useEffect } from "react";
-import "animate.css/animate.min.css";
+import Navbar from './components/Navbar';
+import Main from './components/Main';
+import About from './components/About';
+import Skils from './components/Skils';
+import Works from './components/Works';
+import Mail from './components/Mail';
+import { motion , useScroll} from 'framer-motion';
+import Footer from './components/Footer';
+import { useRef , useEffect } from 'react';
+import 'animate.css/animate.min.css';
  function Home() {
   const{scrollYProgress} = useScroll();
 
@@ -17,7 +17,7 @@ import "animate.css/animate.min.css";
   return (
     <>
     <motion.div
-        className="progress-bar"
+        className='progress-bar'
         style={{ scaleX: scrollYProgress }}
       />
       

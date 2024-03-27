@@ -12,9 +12,9 @@ function Works() {
 
 /*
   useEffect(() => {
-    const webBtn = document.getElementById("webBtn");
-    const designBtn = document.getElementById("designBtn");
-    const videoBtn = document.getElementById("videoBtn");
+    const webBtn = document.getElementById('webBtn');
+    const designBtn = document.getElementById('designBtn');
+    const videoBtn = document.getElementById('videoBtn');
     console.log(webBtn);
 
     webBtn.addEventListener('click',()=>{
@@ -22,9 +22,9 @@ function Works() {
       const web = document.getElementById('web');
       const design = document.getElementById('design');
       const video = document.getElementById('video');
-      web.classList.add("show_animation");
-      design.classList.remove("show_animation");
-      video.classList.remove("show_animation");
+      web.classList.add('show_animation');
+      design.classList.remove('show_animation');
+      video.classList.remove('show_animation');
       web.style.display='flex';
 
 
@@ -34,9 +34,9 @@ function Works() {
       const web = document.getElementById('web');
       const design = document.getElementById('design');
       const video = document.getElementById('video');
-      web.classList.remove("show_animation");
-      design.classList.add("show_animation");
-      video.classList.remove("show_animation");
+      web.classList.remove('show_animation');
+      design.classList.add('show_animation');
+      video.classList.remove('show_animation');
       web.style.display='none';
     });
     videoBtn.addEventListener('click',()=>{
@@ -44,9 +44,9 @@ function Works() {
       const web = document.getElementById('web');
       const design = document.getElementById('design');
       const video = document.getElementById('video');
-      web.classList.remove("show_animation");
-      design.classList.remove("show_animation");
-      video.classList.add("show_animation");
+      web.classList.remove('show_animation');
+      design.classList.remove('show_animation');
+      video.classList.add('show_animation');
       web.style.display='none';
     });
 
@@ -67,17 +67,17 @@ function Works() {
                 
         </div>
         <div className='flex justify-center   items-center'>
-          <div className="webs flex justify-center flex-wrap items-center" id='web'>
+          <div className='webs flex justify-center flex-wrap items-center' id='web'>
               <div  ref={ref}  style={{
-                    transform: isInView ? "none" : "translateX(200px)",
+                    transform: isInView ? 'none' : 'translateX(200px)',
                     opacity: isInView ? 1 : 0,
-                    transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}} className="card relative w-[350px] m-10  shadow-lg shadow-cyan-500/50 rounded-lg " >
-                <a href="https://digitalmedcare.com">
+                    transition: 'all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s'}} className='card relative w-[350px] m-10  shadow-lg shadow-cyan-500/50 rounded-lg ' >
+                <a href='https://digitalmedcare.com'>
                   <Image
                         src={dmcWeb} // Replace with your image path
-                        alt="Background Image"
-                        layout="cover" // Or "contain", "cover", or "intrinsic"
-                        objectFit="cover" // Optional: control image positioning within the div
+                        alt='Background Image'
+                        layout='cover' // Or 'contain', 'cover', or 'intrinsic'
+                        objectFit='cover' // Optional: control image positioning within the div
                         className='block  hover:opacity-10 ease-out duration-300 rounded-lg'
                     />
                     <div className='absolute rounded-lg top-0 bottom-0 left-0 right-0 w-full  bg-gradient-to-r from-sky-500 to-indigo-500 flex flex-col justify-center items-center bg-slate-100 -z-10'>
@@ -86,15 +86,15 @@ function Works() {
                   </a> 
               </div>
               <div  ref={ref}  style={{
-                    transform: isInView ? "none" : "translateX(-200px)",
+                    transform: isInView ? 'none' : 'translateX(-200px)',
                     opacity: isInView ? 1 : 0,
-                    transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}} className="card relative w-[350px] m-10  shadow-lg shadow-cyan-500/50 rounded-lg " >
-                <a href="https://nexmed.vercel.app">
+                    transition: 'all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s'}} className='card relative w-[350px] m-10  shadow-lg shadow-cyan-500/50 rounded-lg ' >
+                <a href='https://nexmed.vercel.app'>
                   <Image
                         src={nexmedWeb} // Replace with your image path
-                        alt="Background Image"
-                        layout="cover" // Or "contain", "cover", or "intrinsic"
-                        objectFit="cover" // Optional: control image positioning within the div
+                        alt='Background Image'
+                        layout='cover' // Or 'contain', 'cover', or 'intrinsic'
+                        objectFit='cover' // Optional: control image positioning within the div
                         className='block  hover:opacity-10 ease-out duration-300 rounded-lg'
                     />
                     <div className='absolute rounded-lg top-0 bottom-0 left-0 right-0 w-full  bg-gradient-to-r from-sky-500 to-indigo-500 flex flex-col justify-center items-center bg-slate-100 -z-10'>

@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <div className='fixed   w-full h-[80px] flex justify-between items-center px-4 bg-transparent text-gray-300'>
       <div>
-        <Image width={70} src={Yahia} alt="" />
+        <Image width={70} src={Yahia} alt='' />
       </div>
 
       <div>

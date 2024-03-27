@@ -22,23 +22,23 @@ function Skils() {
                 
             </div>
             <div ref={ref} style={{
-                transform: isInView ? "none" : "translateY(100px)",
+                transform: isInView ? 'none' : 'translateY(100px)',
                 opacity: isInView ? 1 : 0,
-                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"}} className="container flex justify-around items-center flex-wrap">
+                transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s'}} className='container flex justify-around items-center flex-wrap'>
                 <div className='w-[200px] h-[200px] flex items-center justify-center mx-5'>
-                    <Image src={bootstrap} alt="bootstrap" width={100} />
+                    <Image src={bootstrap} alt='bootstrap' width={100} />
                 </div>
                 <div className='w-[200px] h-[200px] flex items-center justify-center mx-5'>
-                    <Image src={tailwind} alt="bootstrap" width={200} className='rounded' />
+                    <Image src={tailwind} alt='bootstrap' width={200} className='rounded' />
                 </div>
-                <div className="circle"></div>
+                <div className='circle'></div>
 
                 <div className='w-[200px] h-[200px] flex items-center justify-center mx-5'>
-                    <Image src={react} alt="react" width={200} />
+                    <Image src={react} alt='react' width={200} />
 
                 </div>
                 <div className='w-[200px] h-[200px] flex items-center justify-center mx-5'>
-                    <Image src={laravel} alt="laravel" width={200} />
+                    <Image src={laravel} alt='laravel' width={200} />
                 
                 </div>
                 
