@@ -1,7 +1,6 @@
 'use client';
-import React,{ useEffect, useRef } from 'react'
+import React,{  useRef } from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi';
-import {motion} from 'framer-motion'
 import { useInView } from 'framer-motion';
 
 function About() {
