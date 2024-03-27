@@ -21,11 +21,11 @@ function Mail() {
       const [successMessage, setSuccessMessage] = useState('');
       const [errorMessage, setErrorMessage] = useState('');
     
-      const handleChange = (event) => {
+      const handleChange = (event:any) => {
         setFormData({ ...formData, [event.target.name]: event.target.value });
       };
     
-      const handleSubmit = async (event) => {
+      const handleSubmit = async (event:any) => {
         event.preventDefault();
         setIsSubmitting(true);
       
