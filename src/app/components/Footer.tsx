@@ -44,7 +44,7 @@ function Footer(){
                 <ul className='mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end'>
                 <li>
                     <a
-                    href='#'
+                    href='https://www.facebook.com/aned.sbahi/'
                     rel='noreferrer'
                     target='_blank'
                     className=' transition hover:opacity-75'
@@ -63,7 +63,7 @@ function Footer(){
         
                 <li>
                     <a
-                    href='#'
+                    href='https://www.instagram.com/yahia.sbahi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='
                     rel='noreferrer'
                     target='_blank'
                     className=' transition hover:opacity-75'
@@ -87,7 +87,7 @@ function Footer(){
                     target='_blank'
                     className=' transition hover:opacity-75'
                     >
-                    <span className='sr-only'>Twitter</span>
+                    <span className='sr-only'>LinkdIn</span>
         
                     <svg className='w-6 h-6' viewBox='0 0 800 800' fill='none' xmlns='http://www.w3.org/2000/svg'>
                             <path fill-rule='evenodd' clip-rule='evenodd' d='M800 800H640V520.039C640 443.239 606.12 400.391 545.36 400.391C479.24 400.391 440 445.039 440 520.039V800H280V280H440V338.477C440 338.477 490.2 250.391 603.32 250.391C716.48 250.391 800 319.444 800 462.324V800ZM97.6801 196.836C43.7201 196.836 0 152.758 0 98.3984C0 44.0784 43.7201 0 97.6801 0C151.6 0 195.32 44.0784 195.32 98.3984C195.36 152.758 151.6 196.836 97.6801 196.836ZM0 800H200V280H0V800Z' fill='white'/>
@@ -98,7 +98,7 @@ function Footer(){
         
                 <li>
                     <a
-                    href='#'
+                    href='https://github.com/yahiaAnes'
                     rel='noreferrer'
                     target='_blank'
                     className=' transition hover:opacity-75'

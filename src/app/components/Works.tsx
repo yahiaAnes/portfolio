@@ -67,11 +67,11 @@ function Works() {
                 
         </div>
         <div className='flex justify-center   items-center'>
-          <div className='webs flex justify-center flex-wrap items-center' id='web'>
-              <div  ref={ref}  style={{
-                    transform: isInView ? 'none' : 'translateX(200px)',
+          <div ref={ref}  style={{
+                    transform: isInView ? 'none' : 'translateY(200px)',
                     opacity: isInView ? 1 : 0,
-                    transition: 'all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s'}} className='card relative w-[350px] m-10  shadow-lg shadow-cyan-500/50 rounded-lg ' >
+                    transition: 'all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s'}}  className='webs flex justify-center flex-wrap items-center' id='web'>
+              <div  className='card relative w-[350px] m-10  shadow-lg shadow-cyan-500/50 rounded-lg ' >
                 <a href='https://digitalmedcare.com'>
                   <Image
                         src={dmcWeb} // Replace with your image path
@@ -85,10 +85,7 @@ function Works() {
                     </div>
                   </a> 
               </div>
-              <div  ref={ref}  style={{
-                    transform: isInView ? 'none' : 'translateX(-200px)',
-                    opacity: isInView ? 1 : 0,
-                    transition: 'all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s'}} className='card relative w-[350px] m-10  shadow-lg shadow-cyan-500/50 rounded-lg ' >
+              <div className='card relative w-[350px] m-10  shadow-lg shadow-cyan-500/50 rounded-lg ' >
                 <a href='https://nexmed.vercel.app'>
                   <Image
                         src={nexmedWeb} // Replace with your image path
