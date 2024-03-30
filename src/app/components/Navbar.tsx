@@ -4,25 +4,36 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import  Yahia  from '../assets/Yahia_logo2.png';
 import Image from 'next/image'
-
+import {Link} from 'react-scroll';
 
 function Navbar() {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed   w-full h-[80px] flex justify-between items-center px-4 bg-transparent text-gray-300'>
+    <div  className='fixed   w-full h-[80px] flex justify-between items-center px-4 bg-transparent text-gray-300'>
       <div>
         <Image width={70} src={Yahia} alt='' />
       </div>
 
       <div>
         <ul className='hidden md:flex '>
-          <li className='px-5'>Home</li>
-          <li className='px-5'>About</li>
-          <li className='px-5'>Skills</li>
-          <li className='px-5'>Work</li>
-          <li className='px-5'>Contact</li>
+          
+          <li className='px-5 cursor-pointer'><Link to="Home" smooth={true} duration={500}>
+            Home
+          </Link></li>
+          <li className='px-5 cursor-pointer'><Link to="About" smooth={true} duration={500}>
+            About
+          </Link></li>
+          <li className='px-5 cursor-pointer'><Link to="Skils" smooth={true} duration={500}>
+            Skils
+          </Link></li>
+          <li className='px-5 cursor-pointer'><Link to="Works" smooth={true} duration={500}>
+            Works
+          </Link></li>
+          <li className='px-5 cursor-pointer'><Link to="Contact" smooth={true} duration={500}>
+            Contact
+          </Link></li>
         </ul>
       </div>
 

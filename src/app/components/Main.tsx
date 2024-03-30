@@ -13,7 +13,7 @@ function Main(){
     const isInView = useInView(ref, { once: true });
     return(
         <>
-        <div className='h-screen flex justify-between items-center '>
+        <div name='Home' className='h-screen flex justify-between items-center '>
             
             <div className='w-[700px] px-10'>
             <motion.div

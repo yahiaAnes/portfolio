@@ -55,7 +55,7 @@ function Works() {
   */
 
   return (
-    <div   className='w-full     min-h-screen py-20'>
+    <div  name='Works' className='w-full     min-h-screen py-20'>
       <div>
         <div className='px-10 mb-10'>
           <div>

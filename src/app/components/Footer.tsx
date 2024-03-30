@@ -1,5 +1,6 @@
 'use client';
 
+import {Link} from 'react-scroll';
 
 function Footer(){
     return(
@@ -12,32 +13,31 @@ function Footer(){
                 Ready to get started? Let's chat about your project! I'm happy to answer any questions you might have and discuss how I can help you achieve your online goals.
                 </p>
         
-                <a
-                href='#'
-                className='mt-8 inline-block rounded-full border border-[#00040F] px-12 py-3 text-sm font-medium text-[#00040F] hover:bg-[#00040F] hover:text-white focus:outline-none focus:ring active:bg-indigo-500'
-                >
-                Get Started
-                </a>
+                
+                    <Link  to="Home" className='mt-8 inline-block rounded-full border border-[#00040F] px-12 py-3 text-sm font-medium text-[#00040F] hover:bg-[#00040F] hover:text-white focus:outline-none focus:ring active:bg-indigo-500' smooth={true} duration={500}>
+                    Get Started
+                    </Link>
+                
+               
             </div>
         
             <div className='mt-16 border-t text-white border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24'>
                 <ul className='flex flex-wrap justify-center gap-4 text-xs lg:justify-end'>
-                <li>
-                    <a href='#' className=' transition hover:opacity-75'> Home </a>
-                </li>
-                <li>
-                    <a href='#' className=' transition hover:opacity-75'> About </a>
-                </li>
-                <li>
-                    <a href='#' className=' transition hover:opacity-75'> Skills </a>
-                </li>
-        
-                <li>
-                    <a href='#' className=' transition hover:opacity-75'> Projects </a>
-                </li>
-        
-                <li>
-                    <a href='#' className=' transition hover:opacity-75'> Contact </a>
+                <li className='px-5 cursor-pointer'><Link to="Home" smooth={true} duration={500}>
+                        Home
+                    </Link></li>
+                    <li className='px-5 cursor-pointer'><Link to="About" smooth={true} duration={500}>
+                        About
+                    </Link></li>
+                    <li className='px-5 cursor-pointer'><Link to="Skils" smooth={true} duration={500}>
+                        Skils
+                    </Link></li>
+                    <li className='px-5 cursor-pointer'><Link to="Works" smooth={true} duration={500}>
+                        Works
+                    </Link></li>
+                    <li className='px-5 cursor-pointer'><Link to="Contact" smooth={true} duration={500}>
+                        Contact
+                    </Link>
                 </li>
                 </ul>
         
