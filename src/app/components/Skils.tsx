@@ -14,7 +14,7 @@ function Skils() {
     const isInView = useInView(ref, { once: true });
 
   return (
-    <div name='Skils'  className='w-full   flex justify-center   items-center  h-screen py-20'>
+    <div id='Skils'  className='w-full   flex justify-center   items-center  h-screen py-20'>
         <div>
             <div className='px-5 mb-10'>
                 <p className='text-[#00F7FF] '>My Skils</p>

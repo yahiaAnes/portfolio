@@ -6,6 +6,7 @@ import 'animate.css';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import {Link} from 'react-scroll'
 
 function Main(){
     
@@ -13,7 +14,7 @@ function Main(){
     const isInView = useInView(ref, { once: true });
     return(
         <>
-        <div name='Home' className='h-screen flex justify-between items-center '>
+        <div id='Home' className='h-screen flex justify-between items-center '>
             
             <div className='w-[700px] px-10'>
             <motion.div
@@ -28,12 +29,18 @@ function Main(){
                         opacity: isInView ? 1 : 0,
                         transition: 'all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s'}} >
                 <p className='text-white py-5'>What are you looking to achieve today? Let's craft something amazing together.</p>
+                <Link to="About" smooth={true} duration={500}>
+
                 <button className='text-white group border-2 px-6 py-2 flex items-center hover:bg-[#00F7FF] hover:border-[#00F7FF] hover:text-[#0a192f]'>
+                    
+                
                     check it now 
                     <span className='group-hover:rotate-90 duration-300'>
                         <HiArrowNarrowRight className='ml-3'/>
                     </span>
                 </button>
+                </Link>
+
             </div>
                 <div className='circle'></div>
                 

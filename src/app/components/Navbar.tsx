@@ -47,14 +47,27 @@ function Navbar() {
       </div>
       {/* mobile responsive */}
 
-      <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#00040F] flex flex-col justify-center items-center'}>
-        <li className='py-6 text-4xl'>Home</li>
-        <li className='py-6 text-4xl'>About</li>
-        <li className='py-6 text-4xl'>Skills</li>
-        <li className='py-6 text-4xl'>Work</li>
-        <li className='py-6 text-4xl'>Contact</li>
+      <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#00040F]  flex flex-col justify-center items-center'}>
+          <li className='py-5 cursor-pointer text-4xl'><Link onClick={handleClick} to="Home" smooth={true} duration={500}>
+            Home
+          </Link></li>
+          <li className='py-5 cursor-pointer text-4xl'><Link onClick={handleClick} to="About" smooth={true} duration={500}>
+            About
+          </Link></li>
+          <li className='py-5 cursor-pointer text-4xl'><Link onClick={handleClick} to="Skils" smooth={true} duration={500}>
+            Skils
+          </Link></li>
+          <li className='py-5 cursor-pointer text-4xl'><Link onClick={handleClick} to="Works" smooth={true} duration={500}>
+            Works
+          </Link></li>
+          <li className='py-5 cursor-pointer text-4xl'><Link onClick={handleClick} to="Contact" smooth={true} duration={500}>
+            Contact
+          </Link></li>
 
-        <button className=' px-3 py-6 text-2xl font-bold bg-[#00F7FF] text-black rounded-[15px]'>Get started</button>
+          <Link onClick={handleClick} to="Contact" smooth={true} duration={500}>
+            <button className=' px-3 py-6 text-2xl font-bold bg-[#00F7FF] text-black rounded-[15px]'>Get started</button>
+            
+          </Link>
 
       </ul>
       {/* social media */}

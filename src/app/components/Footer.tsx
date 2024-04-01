@@ -14,8 +14,8 @@ function Footer(){
                 </p>
         
                 
-                    <Link  to="Home" className='mt-8 inline-block rounded-full border border-[#00040F] px-12 py-3 text-sm font-medium text-[#00040F] hover:bg-[#00040F] hover:text-white focus:outline-none focus:ring active:bg-indigo-500' smooth={true} duration={500}>
-                    Get Started
+                    <Link  to="Contact" className='cursor-pointer mt-8 inline-block rounded-full border border-[#00040F] px-12 py-3 text-sm font-medium text-[#00040F] hover:bg-[#00040F] hover:text-white focus:outline-none focus:ring active:bg-indigo-500' smooth={true} duration={500}>
+                        Get Started
                     </Link>
                 
                

@@ -51,7 +51,7 @@ function Mail() {
     const isInView = useInView(ref, { once: true });
   return (
    <>
-    <div name='Contact' className='w-full  flex justify-around items-center flex-wrap px-10 min-h-screen py-10'>
+    <div id='Contact' className='w-full  flex justify-around items-center flex-wrap px-10 min-h-screen py-10'>
         <div  className='contact my-10'>
             <div className='mb-5'>
                 <p className='text-[#00F7FF] '>Let's get in touche</p>
